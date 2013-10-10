@@ -1,0 +1,10 @@
+C:\IBSYS-Workspace\ibsys2tool\ibsys2tool\ibsys2tool\bin\Debug\ibsys2tool.exe.config
+C:\IBSYS-Workspace\ibsys2tool\ibsys2tool\ibsys2tool\obj\Debug\ibsys2tool.csprojResolveAssemblyReference.cache
+C:\IBSYS-Workspace\ibsys2tool\ibsys2tool\ibsys2tool\obj\Debug\ibsys2tool.Form1.resources
+C:\IBSYS-Workspace\ibsys2tool\ibsys2tool\ibsys2tool\obj\Debug\ibsys2tool.Properties.Resources.resources
+C:\IBSYS-Workspace\ibsys2tool\ibsys2tool\ibsys2tool\obj\Debug\ibsys2tool.csproj.GenerateResource.Cache
+C:\IBSYS-Workspace\ibsys2tool\ibsys2tool\ibsys2tool\bin\Debug\ibsys2tool.exe
+C:\IBSYS-Workspace\ibsys2tool\ibsys2tool\ibsys2tool\bin\Debug\ibsys2tool.pdb
+C:\IBSYS-Workspace\ibsys2tool\ibsys2tool\ibsys2tool\obj\Debug\ibsys2tool.exe
+C:\IBSYS-Workspace\ibsys2tool\ibsys2tool\ibsys2tool\obj\Debug\ibsys2tool.pdb
+C:\IBSYS-Workspace\ibsys2tool\ibsys2tool\ibsys2tool\obj\Debug\ibsys2tool.Info.resources

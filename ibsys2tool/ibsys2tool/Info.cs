@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace ibsys2tool
 {
-    public partial class Form1 : Form
+    public partial class Info : Form
     {
-        public Form1()
+        public Info()
         {
             InitializeComponent();
-        }
-
-        private void infoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Info info = new Info();
-            info.ShowDialog();
         }
     }
 }
