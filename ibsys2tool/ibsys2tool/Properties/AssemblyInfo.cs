@@ -5,10 +5,10 @@ using System.Runtime.InteropServices;
 // Allgemeine Informationen über eine Assembly werden über die folgenden 
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die mit einer Assembly verknüpft sind.
-[assembly: AssemblyTitle("ibsys2tool")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Ibsys2 Tool")]
+[assembly: AssemblyDescription("Developed by Markus Eppele, Felix Albert, Florian Oppermann, Viktor Plotnikow, Adrian Müller")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Hochschule Karlsruhe - Technik und Wirtschaft")]
 [assembly: AssemblyProduct("ibsys2tool")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]

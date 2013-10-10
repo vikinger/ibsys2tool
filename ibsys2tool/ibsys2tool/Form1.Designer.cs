@@ -33,16 +33,19 @@
             this.xMLImportierenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.xMLExportierenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.einstellungenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.scsimToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.startseiteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sCSimStartseiteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.infoÜberToolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.btnXml = new System.Windows.Forms.Button();
+            this.btnBestellverwaltung = new System.Windows.Forms.Button();
+            this.btnKapazitätsplan = new System.Windows.Forms.Button();
+            this.btnDisposition = new System.Windows.Forms.Button();
+            this.btnPrognose = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -50,12 +53,11 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dateiToolStripMenuItem,
             this.einstellungenToolStripMenuItem,
-            this.scsimToolStripMenuItem,
             this.infoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(529, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(743, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -86,116 +88,134 @@
             this.einstellungenToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
             this.einstellungenToolStripMenuItem.Text = "Einstellungen";
             // 
-            // scsimToolStripMenuItem
-            // 
-            this.scsimToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.startseiteToolStripMenuItem});
-            this.scsimToolStripMenuItem.Name = "scsimToolStripMenuItem";
-            this.scsimToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
-            this.scsimToolStripMenuItem.Text = "Scsim";
-            // 
             // infoToolStripMenuItem
             // 
+            this.infoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sCSimStartseiteToolStripMenuItem,
+            this.infoÜberToolToolStripMenuItem});
             this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
             this.infoToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
             this.infoToolStripMenuItem.Text = "Info";
             this.infoToolStripMenuItem.Click += new System.EventHandler(this.infoToolStripMenuItem_Click);
             // 
-            // label1
+            // sCSimStartseiteToolStripMenuItem
             // 
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(0, 23);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(529, 2);
-            this.label1.TabIndex = 2;
+            this.sCSimStartseiteToolStripMenuItem.Name = "sCSimStartseiteToolStripMenuItem";
+            this.sCSimStartseiteToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.sCSimStartseiteToolStripMenuItem.Text = "SCSim-Startseite";
+            this.sCSimStartseiteToolStripMenuItem.Click += new System.EventHandler(this.sCSimStartseiteToolStripMenuItem_Click);
             // 
-            // button1
+            // infoÜberToolToolStripMenuItem
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuBar;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(9, 27);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 28);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Prognose";
-            this.button1.UseVisualStyleBackColor = true;
+            this.infoÜberToolToolStripMenuItem.Name = "infoÜberToolToolStripMenuItem";
+            this.infoÜberToolToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.infoÜberToolToolStripMenuItem.Text = "Infos zum Tool";
+            this.infoÜberToolToolStripMenuItem.Click += new System.EventHandler(this.infoÜberToolToolStripMenuItem_Click);
             // 
-            // button2
+            // splitContainer1
             // 
-            this.button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuBar;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(9, 59);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 28);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Disposition Eigenfertigung";
-            this.button2.UseVisualStyleBackColor = true;
+            this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.IsSplitterFixed = true;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 24);
+            this.splitContainer1.Name = "splitContainer1";
             // 
-            // button3
+            // splitContainer1.Panel1
             // 
-            this.button3.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuBar;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(9, 92);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(104, 28);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Kapazitätsplan";
-            this.button3.UseVisualStyleBackColor = true;
+            this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.splitContainer1.Panel1.Controls.Add(this.btnXml);
+            this.splitContainer1.Panel1.Controls.Add(this.btnBestellverwaltung);
+            this.splitContainer1.Panel1.Controls.Add(this.btnKapazitätsplan);
+            this.splitContainer1.Panel1.Controls.Add(this.btnDisposition);
+            this.splitContainer1.Panel1.Controls.Add(this.btnPrognose);
+            this.splitContainer1.Size = new System.Drawing.Size(743, 468);
+            this.splitContainer1.SplitterDistance = 127;
+            this.splitContainer1.SplitterWidth = 1;
+            this.splitContainer1.TabIndex = 1;
             // 
-            // button4
+            // btnXml
             // 
-            this.button4.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuBar;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(9, 124);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(104, 28);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Bestellverwaltung";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnXml.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuBar;
+            this.btnXml.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXml.Location = new System.Drawing.Point(11, 141);
+            this.btnXml.Margin = new System.Windows.Forms.Padding(2);
+            this.btnXml.Name = "btnXml";
+            this.btnXml.Size = new System.Drawing.Size(104, 28);
+            this.btnXml.TabIndex = 12;
+            this.btnXml.Text = "XML";
+            this.btnXml.UseVisualStyleBackColor = true;
+            this.btnXml.Click += new System.EventHandler(this.btnXml_Click);
             // 
-            // button5
+            // btnBestellverwaltung
             // 
-            this.button5.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuBar;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(9, 157);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(104, 28);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "XML";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnBestellverwaltung.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuBar;
+            this.btnBestellverwaltung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBestellverwaltung.Location = new System.Drawing.Point(11, 109);
+            this.btnBestellverwaltung.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBestellverwaltung.Name = "btnBestellverwaltung";
+            this.btnBestellverwaltung.Size = new System.Drawing.Size(104, 28);
+            this.btnBestellverwaltung.TabIndex = 11;
+            this.btnBestellverwaltung.Text = "Bestellverwaltung";
+            this.btnBestellverwaltung.UseVisualStyleBackColor = true;
+            this.btnBestellverwaltung.Click += new System.EventHandler(this.btnBestellverwaltung_Click);
             // 
-            // startseiteToolStripMenuItem
+            // btnKapazitätsplan
             // 
-            this.startseiteToolStripMenuItem.Name = "startseiteToolStripMenuItem";
-            this.startseiteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.startseiteToolStripMenuItem.Text = "Startseite";
-            this.startseiteToolStripMenuItem.Click += new System.EventHandler(this.startseiteToolStripMenuItem_Click);
+            this.btnKapazitätsplan.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuBar;
+            this.btnKapazitätsplan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKapazitätsplan.Location = new System.Drawing.Point(11, 77);
+            this.btnKapazitätsplan.Margin = new System.Windows.Forms.Padding(2);
+            this.btnKapazitätsplan.Name = "btnKapazitätsplan";
+            this.btnKapazitätsplan.Size = new System.Drawing.Size(104, 28);
+            this.btnKapazitätsplan.TabIndex = 10;
+            this.btnKapazitätsplan.Text = "Kapazitätsplan";
+            this.btnKapazitätsplan.UseVisualStyleBackColor = true;
+            this.btnKapazitätsplan.Click += new System.EventHandler(this.btnKapazitätsplan_Click);
+            // 
+            // btnDisposition
+            // 
+            this.btnDisposition.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuBar;
+            this.btnDisposition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDisposition.Location = new System.Drawing.Point(11, 45);
+            this.btnDisposition.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDisposition.Name = "btnDisposition";
+            this.btnDisposition.Size = new System.Drawing.Size(104, 28);
+            this.btnDisposition.TabIndex = 9;
+            this.btnDisposition.Text = "Disposition Eigenfertigung";
+            this.btnDisposition.UseVisualStyleBackColor = true;
+            this.btnDisposition.Click += new System.EventHandler(this.btnDisposition_Click);
+            // 
+            // btnPrognose
+            // 
+            this.btnPrognose.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnPrognose.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuBar;
+            this.btnPrognose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrognose.Location = new System.Drawing.Point(11, 13);
+            this.btnPrognose.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPrognose.Name = "btnPrognose";
+            this.btnPrognose.Size = new System.Drawing.Size(104, 28);
+            this.btnPrognose.TabIndex = 8;
+            this.btnPrognose.Text = "Prognose";
+            this.btnPrognose.UseVisualStyleBackColor = true;
+            this.btnPrognose.Click += new System.EventHandler(this.btnPrognose_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(529, 311);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(743, 492);
+            this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Ibsys2 Tool";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,14 +229,14 @@
         private System.Windows.Forms.ToolStripMenuItem xMLExportierenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem einstellungenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.ToolStripMenuItem scsimToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem startseiteToolStripMenuItem;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.Button btnXml;
+        private System.Windows.Forms.Button btnBestellverwaltung;
+        private System.Windows.Forms.Button btnKapazitätsplan;
+        private System.Windows.Forms.Button btnDisposition;
+        private System.Windows.Forms.Button btnPrognose;
+        private System.Windows.Forms.ToolStripMenuItem sCSimStartseiteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem infoÜberToolToolStripMenuItem;
     }
 }
 

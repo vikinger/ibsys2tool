@@ -73,6 +73,42 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl_Begrüßung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Begrüßung.Designer.cs">
+      <DependentUpon>UserControl_Begrüßung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Bestellverwaltung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Bestellverwaltung.Designer.cs">
+      <DependentUpon>UserControl_Bestellverwaltung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Disposition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Disposition.Designer.cs">
+      <DependentUpon>UserControl_Disposition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Kapazitätsplan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Kapazitätsplan.Designer.cs">
+      <DependentUpon>UserControl_Kapazitätsplan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Prognose.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Prognose.Designer.cs">
+      <DependentUpon>UserControl_Prognose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Xml.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Xml.Designer.cs">
+      <DependentUpon>UserControl_Xml.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -88,6 +124,24 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControl_Begrüßung.resx">
+      <DependentUpon>UserControl_Begrüßung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Bestellverwaltung.resx">
+      <DependentUpon>UserControl_Bestellverwaltung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Disposition.resx">
+      <DependentUpon>UserControl_Disposition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Kapazitätsplan.resx">
+      <DependentUpon>UserControl_Kapazitätsplan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Prognose.resx">
+      <DependentUpon>UserControl_Prognose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Xml.resx">
+      <DependentUpon>UserControl_Xml.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
