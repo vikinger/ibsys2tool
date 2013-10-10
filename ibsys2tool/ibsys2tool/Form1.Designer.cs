@@ -33,6 +33,7 @@
             this.xMLImportierenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.xMLExportierenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.einstellungenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.scsimToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -40,6 +41,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.startseiteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,6 +50,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dateiToolStripMenuItem,
             this.einstellungenToolStripMenuItem,
+            this.scsimToolStripMenuItem,
             this.infoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -83,6 +86,14 @@
             this.einstellungenToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
             this.einstellungenToolStripMenuItem.Text = "Einstellungen";
             // 
+            // scsimToolStripMenuItem
+            // 
+            this.scsimToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.startseiteToolStripMenuItem});
+            this.scsimToolStripMenuItem.Name = "scsimToolStripMenuItem";
+            this.scsimToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.scsimToolStripMenuItem.Text = "Scsim";
+            // 
             // infoToolStripMenuItem
             // 
             this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
@@ -105,7 +116,7 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuBar;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(9, 27);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(104, 28);
             this.button1.TabIndex = 3;
@@ -117,7 +128,7 @@
             this.button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuBar;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(9, 59);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(104, 28);
             this.button2.TabIndex = 4;
@@ -129,7 +140,7 @@
             this.button3.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuBar;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Location = new System.Drawing.Point(9, 92);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(104, 28);
             this.button3.TabIndex = 5;
@@ -141,7 +152,7 @@
             this.button4.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuBar;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Location = new System.Drawing.Point(9, 124);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(104, 28);
             this.button4.TabIndex = 6;
@@ -153,12 +164,19 @@
             this.button5.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuBar;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Location = new System.Drawing.Point(9, 157);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(104, 28);
             this.button5.TabIndex = 7;
             this.button5.Text = "XML";
             this.button5.UseVisualStyleBackColor = true;
+            // 
+            // startseiteToolStripMenuItem
+            // 
+            this.startseiteToolStripMenuItem.Name = "startseiteToolStripMenuItem";
+            this.startseiteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.startseiteToolStripMenuItem.Text = "Startseite";
+            this.startseiteToolStripMenuItem.Click += new System.EventHandler(this.startseiteToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -173,7 +191,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Ibsys2 Tool";
             this.menuStrip1.ResumeLayout(false);
@@ -197,6 +215,8 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.ToolStripMenuItem scsimToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem startseiteToolStripMenuItem;
     }
 }
 
