@@ -14,6 +14,7 @@ namespace ibsys2tool
         [STAThread]
         static void Main()
         {
+            //öffnet den Startbildschirm
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
