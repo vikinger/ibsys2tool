@@ -4,9 +4,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using System.Xml;
 using System.Windows.Forms;
 
 namespace ibsys2tool
@@ -15,12 +18,9 @@ namespace ibsys2tool
     {
         public Form1()
         {
+            //Hier müsste der Wert aus der SQLite Datenbank genommen werden - nur provisorisch
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(GlobalVariables.language);
             InitializeComponent();
-        }
-
-        private void infoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void sCSimStartseiteToolStripMenuItem_Click(object sender, EventArgs e)
@@ -72,8 +72,56 @@ namespace ibsys2tool
         private void Form1_Load(object sender, EventArgs e)
         {
             splitContainer1.Panel2.Controls.Clear();
-            var myControl = new ibsys2tool.UserControl_Begrüßung();
+            var myControl = new ibsys2tool.UserControl_Prognose();
             splitContainer1.Panel2.Controls.Add(myControl);
+        }
+
+        private void deutschToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Schreibe "de" in Config
+            XmlDocument doc = new XmlDocument();
+            XmlNode settings, language;
+
+            //Root Element einfügen
+            settings = doc.CreateElement("settings");
+            doc.AppendChild(settings);
+
+            language = doc.CreateElement("language");
+            language.InnerText = "de";
+
+            //Unterknoten an Root Knoten anhängen
+            settings.AppendChild(language);
+
+            //XML Dokument speichern
+            doc.Save(GlobalVariables.configPath);
+
+            GlobalVariables.language = "de";
+
+            Application.Restart();
+        }
+
+        private void englischToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Schreibe "en" in Config
+            XmlDocument doc = new XmlDocument();
+            XmlNode settings, language;
+
+            //Root Element einfügen
+            settings = doc.CreateElement("settings");
+            doc.AppendChild(settings);
+
+            language = doc.CreateElement("language");
+            language.InnerText = "en";
+
+            //Unterknoten an Root Knoten anhängen
+            settings.AppendChild(language);
+
+            //XML Dokument speichern
+            doc.Save(GlobalVariables.configPath);
+
+            GlobalVariables.language = "en";
+
+            Application.Restart();
         }
 
     }
