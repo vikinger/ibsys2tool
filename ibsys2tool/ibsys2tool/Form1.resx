@@ -127,19 +127,22 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="splitContainer1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 24</value>
+    <value>0, 28</value>
+  </data>
+  <data name="splitContainer1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="btnXml.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <data name="btnXml.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 141</value>
+    <value>20, 174</value>
   </data>
   <data name="btnXml.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="btnXml.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 28</value>
+    <value>139, 34</value>
   </data>
   <data name="btnXml.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -163,13 +166,13 @@
     <value>Flat</value>
   </data>
   <data name="btnBestellverwaltung.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 109</value>
+    <value>20, 134</value>
   </data>
   <data name="btnBestellverwaltung.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="btnBestellverwaltung.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 28</value>
+    <value>139, 34</value>
   </data>
   <data name="btnBestellverwaltung.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -193,13 +196,13 @@
     <value>Flat</value>
   </data>
   <data name="btnKapazitätsplan.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 77</value>
+    <value>20, 95</value>
   </data>
   <data name="btnKapazitätsplan.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="btnKapazitätsplan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 28</value>
+    <value>139, 34</value>
   </data>
   <data name="btnKapazitätsplan.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -223,13 +226,13 @@
     <value>Flat</value>
   </data>
   <data name="btnDisposition.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 45</value>
+    <value>20, 55</value>
   </data>
   <data name="btnDisposition.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="btnDisposition.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 28</value>
+    <value>139, 34</value>
   </data>
   <data name="btnDisposition.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -253,13 +256,13 @@
     <value>Flat</value>
   </data>
   <data name="btnPrognose.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 13</value>
+    <value>20, 16</value>
   </data>
   <data name="btnPrognose.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="btnPrognose.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 28</value>
+    <value>139, 34</value>
   </data>
   <data name="btnPrognose.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -307,10 +310,10 @@
     <value>1</value>
   </data>
   <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>752, 468</value>
+    <value>1003, 578</value>
   </data>
   <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
-    <value>138</value>
+    <value>184</value>
   </data>
   <data name="splitContainer1.SplitterWidth" type="System.Int32, mscorlib">
     <value>1</value>
@@ -334,52 +337,61 @@
     <value>17, 17</value>
   </metadata>
   <data name="xMLImportierenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 22</value>
+    <value>189, 24</value>
   </data>
   <data name="xMLImportierenToolStripMenuItem.Text" xml:space="preserve">
     <value>XML importieren</value>
   </data>
   <data name="xMLExportierenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 22</value>
+    <value>189, 24</value>
   </data>
   <data name="xMLExportierenToolStripMenuItem.Text" xml:space="preserve">
     <value>XML exportieren</value>
   </data>
   <data name="dateiToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 20</value>
+    <value>57, 24</value>
   </data>
   <data name="dateiToolStripMenuItem.Text" xml:space="preserve">
     <value>Datei</value>
   </data>
   <data name="deutschToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 22</value>
+    <value>175, 24</value>
+  </data>
+  <data name="deutschToolStripMenuItem.Text" xml:space="preserve">
+    <value>Deutsch</value>
   </data>
   <data name="englischToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 22</value>
+    <value>175, 24</value>
+  </data>
+  <data name="englischToolStripMenuItem.Text" xml:space="preserve">
+    <value>Englisch</value>
   </data>
   <data name="spracheToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 22</value>
+    <value>175, 24</value>
+  </data>
+  <data name="spracheToolStripMenuItem.Text" xml:space="preserve">
+    <value>Sprache</value>
   </data>
   <data name="einstellungenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 20</value>
+    <value>109, 24</value>
   </data>
   <data name="einstellungenToolStripMenuItem.Text" xml:space="preserve">
     <value>Einstellungen</value>
   </data>
   <data name="sCSimStartseiteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 22</value>
+    <value>188, 24</value>
   </data>
   <data name="sCSimStartseiteToolStripMenuItem.Text" xml:space="preserve">
     <value>SCSim-Startseite</value>
   </data>
   <data name="infoÜberToolToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 22</value>
+    <value>188, 24</value>
   </data>
   <data name="infoÜberToolToolStripMenuItem.Text" xml:space="preserve">
     <value>Infos zum Tool</value>
   </data>
   <data name="infoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 20</value>
+    <value>47, 24</value>
   </data>
   <data name="infoToolStripMenuItem.Text" xml:space="preserve">
     <value>Info</value>
@@ -388,10 +400,10 @@
     <value>0, 0</value>
   </data>
   <data name="menuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 2, 0, 2</value>
+    <value>5, 2, 0, 2</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>752, 24</value>
+    <value>1003, 28</value>
   </data>
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -418,13 +430,13 @@
     <value>120</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>752, 492</value>
+    <value>1003, 606</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

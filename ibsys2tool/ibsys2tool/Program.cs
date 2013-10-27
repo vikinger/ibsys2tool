@@ -6,6 +6,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Windows.Forms;
+using System.Data.SQLite;
 
 namespace ibsys2tool
 {
@@ -17,45 +18,26 @@ namespace ibsys2tool
         [STAThread]
         static void Main()
         {
-            //Config.xml wahrscheinlich nur vorübergehend, da wahrscheinlich SQLite besser ist. --> Viktors Task.
-            GlobalVariables.configPath = GetApplicationsPath() + "\\config.xml";
+            GlobalVariables.SqlitedbPath = GetApplicationsPath() + "\\" + GlobalVariables.Sqlitedb;
 
-            //Checkt ob Config.XML vorhanden ist, wenn ja liest er die Sprache aus
-            if (File.Exists(GlobalVariables.configPath))
+            //Checkt ob SQLite.db vorhanden ist, wenn ja liest er die Sprache aus
+            if (File.Exists(GlobalVariables.SqlitedbPath))
             {
-                XmlDocument doc = new XmlDocument();
-                doc.Load(GlobalVariables.configPath);
-
-                XmlNode language = doc.SelectSingleNode("/settings/language");
-                GlobalVariables.language = language.InnerText;
+                var dbAccess = new DbAccess();
+                GlobalVariables.Language = dbAccess.GetLanguage();
+                dbAccess.CloseConnection();
             }
-            //Wenn Config.XML im Umgebungsverzeichnis nicht vorhanden ist, erstellt er eine und trägt die Standardsprache DE ein
             else
             {
-                XmlDocument doc = new XmlDocument();
-                XmlNode settings, language;
-
-                //Root Element einfügen
-                settings = doc.CreateElement("settings");
-                doc.AppendChild(settings);
-
-                language = doc.CreateElement("language");               
-                language.InnerText = "de";          
-
-                //Unterknoten an Root Knoten anhängen
-                settings.AppendChild(language);
-
-                //XML Dokument speichern
-                doc.Save(GlobalVariables.configPath);
-
-                GlobalVariables.language = "de";
+                var dbAccess = new DbAccess();
+                dbAccess.CreateTables();
+                dbAccess.CloseConnection();
             }
 
             //öffnet den Startbildschirm
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-
 
         }
 
@@ -66,7 +48,7 @@ namespace ibsys2tool
 
         public static string GetApplicationsPath()
         {
-            FileInfo fi = new FileInfo(Assembly.GetEntryAssembly().Location);
+            var fi = new FileInfo(Assembly.GetEntryAssembly().Location);
             return fi.DirectoryName;
         } 
     }
@@ -74,7 +56,8 @@ namespace ibsys2tool
 
     internal static class GlobalVariables
     {
-        internal static string configPath = null;
-        internal static string language = "en";
+        internal static string Language = "en";
+        internal static string SqlitedbPath = null;
+        internal static string Sqlitedb = "SQLite.db";
     }
 }

@@ -19,7 +19,7 @@ namespace ibsys2tool
         public Form1()
         {
             //Hier müsste der Wert aus der SQLite Datenbank genommen werden - nur provisorisch
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo(GlobalVariables.language);
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(GlobalVariables.Language);
             InitializeComponent();
         }
 
@@ -78,48 +78,22 @@ namespace ibsys2tool
 
         private void deutschToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Schreibe "de" in Config
-            XmlDocument doc = new XmlDocument();
-            XmlNode settings, language;
+            var dbAccess = new DbAccess();
+            dbAccess.SqlCommand("UPDATE config SET value = 'de' WHERE name = 'Language'");
+            dbAccess.CloseConnection();
 
-            //Root Element einfügen
-            settings = doc.CreateElement("settings");
-            doc.AppendChild(settings);
-
-            language = doc.CreateElement("language");
-            language.InnerText = "de";
-
-            //Unterknoten an Root Knoten anhängen
-            settings.AppendChild(language);
-
-            //XML Dokument speichern
-            doc.Save(GlobalVariables.configPath);
-
-            GlobalVariables.language = "de";
+            GlobalVariables.Language = "de";
 
             Application.Restart();
         }
 
         private void englischToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Schreibe "en" in Config
-            XmlDocument doc = new XmlDocument();
-            XmlNode settings, language;
+            var dbAccess = new DbAccess();
+            dbAccess.SqlCommand("UPDATE config SET value = 'en' WHERE name = 'Language'");
+            dbAccess.CloseConnection();
 
-            //Root Element einfügen
-            settings = doc.CreateElement("settings");
-            doc.AppendChild(settings);
-
-            language = doc.CreateElement("language");
-            language.InnerText = "en";
-
-            //Unterknoten an Root Knoten anhängen
-            settings.AppendChild(language);
-
-            //XML Dokument speichern
-            doc.Save(GlobalVariables.configPath);
-
-            GlobalVariables.language = "en";
+            GlobalVariables.Language = "en";
 
             Application.Restart();
         }
